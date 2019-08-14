@@ -12,6 +12,7 @@ class Chandan_Comment_Model_Observer extends Varien_Object
         "comment", 
         array("ordernumber" => $orderid, "customeremail" => $customeremail, "comment" => $orderComment)
 		);	
+		Mage::getSingleton('core/session')->setnewcomment($orderComment);
 		Mage::getSingleton('core/session')->unstextval();
     }   
 }

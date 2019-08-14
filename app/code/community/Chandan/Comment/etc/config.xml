@@ -95,6 +95,18 @@
 		</layout>
     </adminhtml>   
     <global>
+
+      <template>
+            <email>
+                <sales_email_order_template  translate="label" module="comment">
+                    <label>New Order</label>
+                    <file>commentbox/sales/email/order_new.html</file>
+                    <type>html</type>
+                </sales_email_order_template >
+            </email>
+     </template>
+
+
         <models>
             <comment>
                 <class>Chandan_Comment_Model</class>

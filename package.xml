@@ -1,18 +1,47 @@
 <?xml version="1.0"?>
 <package>
     <name>Order_Comment_Checkout</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
-    <license uri="https://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
     <channel>community</channel>
     <extends/>
     <summary>This extension allows customers to add their comments while placing an order.  Requires no manual configuration.</summary>
-    <description>This extension allows customers to add their comments while placing orders. The admin can view comments left by customer and this is also added to the invoice. Order Comments for Magento enables you to provide better service to your customers by letting them write an order-specific comment about the order at time of checkout. The admin can view order comments in the form of grid listing or in the order detail page as a customer order request. Implement a comment box for customer to input details about their order or shipment on checkout</description>
-    <notes>Second Release</notes>
+    <description>&lt;p&gt;This extension allows customers to add their comments while placing orders. The admin can view comments left by customer and this is also added to the invoice. Order Comments for Magento enables you to provide better service to your customers by letting them write an order-specific comment about the order at time of checkout. The admin can view order comments in the form of grid listing or in the order detail page as a customer order request. Implement a comment box for customer to input details about their order or shipment on checkout.&lt;/p&gt;&#xD;
+&#xD;
+ &lt;p&gt;The extension is easy to install and use. The Order Comment Extension is lightweight, completes the task with minimum obstruction, and is in line with the Magento Order Management Workflow.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;Let the customers write a comment about their order at checkout&lt;/h3&gt;&lt;p&gt; During the last step of checkout (Order Review), the customer can write a comment to provide any special handling or order specific information.&lt;/p&gt;&lt;h3&gt;The order comment appears in the comment Menu history&lt;/h3&gt;&lt;p&gt; The customer order comment will appear as part of the order history listing on the Comment page in the admin panel.   &lt;/p&gt;&lt;h3&gt;Order Comment&lt;/h3&gt;&lt;p&gt;  This extension allow customers to post a comment at the order review step. The admin can view the comment on the order comment Menu. Similarly, the customer can view their comment on the generated invoice as well. &lt;/p&gt;&#xD;
+&#xD;
+&lt;h3&gt;&lt;strong&gt;&lt;u&gt;Outstanding Features:&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;&#xD;
+&lt;ol&gt;&#xD;
+&lt;li&gt; Allows customers to write comments or instructions on the checkout page.&lt;/li&gt;&#xD;
+&lt;li&gt; Requires no manual configuration.&lt;/li&gt;&#xD;
+&lt;li&gt; Easy installation.&lt;/li&gt;&#xD;
+&lt;li&gt; Meets Magento programming guidelines.&lt;/li&gt;&#xD;
+&lt;li&gt; 100% open source.&lt;/li&gt;&#xD;
+&lt;li&gt; User can add comments on the checkout Page for specific product or for all products.&lt;/li&gt;&#xD;
+&lt;li&gt; The comments can be viewed by admin during Order comment tab&lt;/li&gt;&#xD;
+&lt;li&gt; Customer can view their comment on generated invoice page&lt;/li&gt;&#xD;
+&lt;/ol&gt;&#xD;
+&#xD;
+&lt;h3&gt;&lt;strong&gt;&lt;u&gt;Demo Detail Below&lt;/u&gt;&lt;/strong&gt;&lt;/h3&gt;&#xD;
+&lt;h3&gt;Frontend Demo&lt;/h3&gt;&lt;p&gt; Link: &lt;a href="http://www.bazaarbihar.com/chandan/index.php/"&gt;http://www.bazaarbihar.com/chandan/index.php/&lt;/a&gt;&lt;/p&gt;&#xD;
+&lt;h3&gt;Backend Demo&lt;/h3&gt;&#xD;
+&lt;span&gt;Link: &lt;a href="http://www.bazaarbihar.com/chandan/index.php/admin"&gt;http://www.bazaarbihar.com/chandan/index.php/admin&lt;/a&gt;&lt;/span&gt;&#xD;
+&lt;div&gt;&lt;/div&gt;&#xD;
+&lt;span&gt;&lt;strong&gt;user:&lt;/strong&gt; demo&lt;/span&gt;&#xD;
+&lt;p&gt;&lt;strong&gt;password:&lt;/strong&gt; demo123&lt;/p&gt;&#xD;
+&lt;h3&gt;&lt;strong&gt;Support:&lt;/strong&gt; &lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+  &lt;li&gt; - If you have any question on our extension(s), please contact us below:&lt;/li&gt;&#xD;
+  &lt;li&gt; - &lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:chandankumar8050@gmail.com"&gt;chandankumar8050@gmail.com&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;/ul&gt;</description>
+    <notes>Third Release</notes>
     <authors><author><name>Chandan Kumar Singh</name><user>chandan8050</user><email>chandankumar8050@gmail.com</email></author></authors>
-    <date>2016-12-19</date>
-    <time>05:34:06</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Chandan_Comment.xml" hash="be24a312e7f826e1ec76c9237e13def7"/></dir></target><target name="magecommunity"><dir name="Chandan"><dir name="Comment"><dir><dir name="Block"><dir name="Adminhtml"><dir name="Comment"><dir name="Edit"><file name="Form.php" hash="ab0afb8dc4bbad079c9436e07e85f037"/><dir name="Tab"><file name="Form.php" hash="b0fdce9bdfa2de014e6842ea8022e9b0"/></dir><file name="Tabs.php" hash="39c4033e2011d26d401624e54881fabf"/></dir><file name="Edit.php" hash="d10532220e205f2737a990deee05ffc9"/><file name="Grid.php" hash="878e4450edebf04683074d79071c8208"/></dir><file name="Comment.php" hash="b76c581f4f905a9bd6d59940ecc4bb7c"/></dir><file name="Comment.php" hash="9578753e0cefe528dddb2e8462c4706e"/><file name="Commentpage.php" hash="017873d9a74b2263e7c9676d3875e4cb"/></dir><dir name="Helper"><file name="Data.php" hash="42b14ff7e4612065b495a3ba0f2b000b"/></dir><dir name="Model"><file name="Comment.php" hash="bb3cb15bc8722da60e8d7231de6e46c8"/><dir name="Mysql4"><dir name="Comment"><file name="Collection.php" hash="06221951a850a05857dd5e93bb720e1a"/></dir><file name="Comment.php" hash="d8b78a16252ead6f88509f6a2ac1f39c"/></dir><file name="Observer.php" hash="69731d9aa5d91870a7da29652dc95a14"/><dir name="Order"><file name="Default.php" hash="4ae725f16df3a040138ce25da1d749d9"/><file name="Invoice.php" hash="58c1a57c7ff972df7565ae7a1548f2f8"/></dir><file name="Status.php" hash="f695106908c082c549df094fffcba503"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CommentController.php" hash="acbb83c7eea7af093989d6d99f70f599"/></dir><file name="IndexController.php" hash="ed4433047859c47f8b9f74a4ab07cad5"/></dir><dir name="etc"><file name="config.xml" hash="5f163e586d106a7b03fc3dab0ce4dd33"/><file name="system.xml" hash="f479a1ef76c4a7a68ff7dd84ba45d72c"/></dir><dir name="sql"><dir name="comment_setup"><file name="mysql4-install-1.0.0.php" hash="472b202b1a1befc9077f25f6d5471d1d"/></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="comment.xml" hash="c4bd2d5ef635163d3c6eb6d1922975f0"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="comment.xml" hash="e001f21d8c498a1fd8a09ae966796647"/></dir><dir name="template"><dir name="comment"><file name="comment.phtml" hash="7ccd71fda2d05929f8058481c05b08ed"/></dir></dir></dir></dir></dir></target></contents>
+    <date>2017-01-03</date>
+    <time>11:10:12</time>
+    <contents><target name="magecommunity"><dir name="Chandan"><dir name="Comment"><dir name="Block"><dir name="Adminhtml"><dir name="Comment"><dir name="Edit"><file name="Form.php" hash="ab0afb8dc4bbad079c9436e07e85f037"/><dir name="Tab"><file name="Form.php" hash="b0fdce9bdfa2de014e6842ea8022e9b0"/></dir><file name="Tabs.php" hash="39c4033e2011d26d401624e54881fabf"/></dir><file name="Edit.php" hash="d10532220e205f2737a990deee05ffc9"/><file name="Grid.php" hash="878e4450edebf04683074d79071c8208"/></dir><file name="Comment.php" hash="b76c581f4f905a9bd6d59940ecc4bb7c"/></dir><file name="Comment.php" hash="9578753e0cefe528dddb2e8462c4706e"/><file name="Commentpage.php" hash="017873d9a74b2263e7c9676d3875e4cb"/></dir><dir name="Helper"><file name="Data.php" hash="42b14ff7e4612065b495a3ba0f2b000b"/></dir><dir name="Model"><file name="Comment.php" hash="bb3cb15bc8722da60e8d7231de6e46c8"/><dir name="Mysql4"><dir name="Comment"><file name="Collection.php" hash="06221951a850a05857dd5e93bb720e1a"/></dir><file name="Comment.php" hash="d8b78a16252ead6f88509f6a2ac1f39c"/></dir><file name="Observer.php" hash="7e5b57a2fe290865384142ca2ec19361"/><dir name="Order"><file name="Default.php" hash="4ae725f16df3a040138ce25da1d749d9"/><file name="Invoice.php" hash="58c1a57c7ff972df7565ae7a1548f2f8"/></dir><file name="Status.php" hash="f695106908c082c549df094fffcba503"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CommentController.php" hash="acbb83c7eea7af093989d6d99f70f599"/></dir><file name="IndexController.php" hash="ed4433047859c47f8b9f74a4ab07cad5"/></dir><dir name="etc"><file name="config.xml" hash="e07ad4c7e3324153218c3f87c6904208"/><file name="system.xml" hash="f479a1ef76c4a7a68ff7dd84ba45d72c"/></dir><dir name="sql"><dir name="comment_setup"><file name="mysql4-install-1.0.0.php" hash="472b202b1a1befc9077f25f6d5471d1d"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="comment.xml" hash="c4bd2d5ef635163d3c6eb6d1922975f0"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="comment.xml" hash="e001f21d8c498a1fd8a09ae966796647"/></dir><dir name="template"><dir name="comment"><file name="comment.phtml" hash="7ccd71fda2d05929f8058481c05b08ed"/><file name="email.phtml" hash="542d007140f8a96c6560a0db451c8063"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Chandan_Comment.xml" hash="be24a312e7f826e1ec76c9237e13def7"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><dir name="commentbox"><dir name="sales"><dir name="email"><file name="order_new.html" hash="efca73179d7d0ea9bb0aff8fe29599ba"/></dir></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>7.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.0.0</min><max>7.1.0</max></php></required></dependencies>
 </package>
