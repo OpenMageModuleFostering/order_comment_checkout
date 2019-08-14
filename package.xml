@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Order_Comment_Checkout</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="https://opensource.org/licenses/osl-3.0.php">Open Software License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension lets customer to add their comments during placing order. </summary>
+    <description>This extension lets customer to add their comments during placing order. Admin can also view comments added by customer and this is also added to invoice.</description>
+    <notes>New Release.</notes>
+    <authors><author><name>Chandan Kumar Singh</name><user>chandan8050</user><email>chandankumar8050@gmail.com</email></author></authors>
+    <date>2016-11-04</date>
+    <time>07:10:57</time>
+    <contents><target name="magecommunity"><dir name="Goigi"><dir name="Comment"><dir name="Block"><dir name="Adminhtml"><dir name="Comment"><dir name="Edit"><file name="Form.php" hash="7eb66c674be0efd56300c447442ccc9e"/><dir name="Tab"><file name="Form.php" hash="24a0515c6d9bd041be56a0b3d967ecfc"/></dir><file name="Tabs.php" hash="6936ee401b4a060cb773bc5ba8a98a34"/></dir><file name="Edit.php" hash="a7e67d15a718888321f93f215c6f72b3"/><file name="Grid.php" hash="46df21ecaa3cc39fdeacce859dcd97fe"/></dir><file name="Comment.php" hash="2ca3a096d12b6b5507906d9e59b4e654"/></dir><file name="Comment.php" hash="1813b443b45b2fcf8fd605f650ff7e5b"/><file name="Commentpage.php" hash="423b0071680a6ab0948e8f211dea3a56"/></dir><dir name="Helper"><file name="Data.php" hash="e30a32e54ef911b542b8b79b202b364d"/></dir><dir name="Model"><file name="Comment.php" hash="8b560f2e7217d6b403c57c0cbcca32d5"/><dir name="Mysql4"><dir name="Comment"><file name="Collection.php" hash="186d2b46795cb5221b60b75a68101f2b"/></dir><file name="Comment.php" hash="96f8aadfe96a78f290c9f20740c725e0"/></dir><file name="Observer.php" hash="20f8512d014d973c40b5137074ac4847"/><dir name="Order"><file name="Default.php" hash="59654ccbf93b3ea008524c76f6578b07"/><file name="Invoice.php" hash="18c34469a7f1530fb9a3f78a78509fd5"/></dir><file name="Status.php" hash="2440f2171fb6f02fd83bfdc32f41dff1"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CommentController.php" hash="ca15d62c9f61811c3a91a091e02f4cfc"/></dir><file name="IndexController.php" hash="4068257c39e2ae08b54a3c43ed56cf75"/></dir><dir name="etc"><file name="config.xml" hash="e91dea0a4d48e0d2bac3babdd41de036"/></dir><dir name="sql"><dir name="comment_setup"><file name="mysql4-install-1.0.0.php" hash="472b202b1a1befc9077f25f6d5471d1d"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="comment.xml" hash="c4bd2d5ef635163d3c6eb6d1922975f0"/></dir></dir></dir></dir><dir name="frontend"><dir name="rwd"><dir name="default"><dir name="layout"><file name="comment.xml" hash="e001f21d8c498a1fd8a09ae966796647"/></dir><dir name="template"><dir name="comment"><file name="comment.phtml" hash="3ad0e7957fa4623152a13afbbc31b5d4"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Goigi_Comment.xml" hash="918fa5e6b1e779898eaf7fecc128e5c1"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>7.0.0</max></php></required></dependencies>
+</package>
