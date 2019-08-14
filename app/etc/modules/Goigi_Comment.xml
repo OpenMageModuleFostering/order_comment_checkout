@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <modules>
-        <Goigi_Comment>
-            <active>true</active>
-            <codePool>community</codePool>
-        </Goigi_Comment>
-    </modules>
-</config> 

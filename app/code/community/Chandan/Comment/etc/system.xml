@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <chandancomment translate="label" module="comment">
+            <label>Comment Setting</label>
+            <sort_order>100</sort_order>
+        </chandancomment>
+    </tabs>
+    <sections>
+        <chandancomment translate="label" module="comment">
+            <label>Comment Options</label>
+            <tab>chandancomment</tab>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <comment_group translate="label" module="comment">
+                    <label>Comment Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>					
+						<comment_status translate="label">
+                            <label>Comment Status: </label>                            
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </comment_status>						
+                    </fields>
+                </comment_group>
+            </groups>
+        </chandancomment>
+    </sections>
+</config>

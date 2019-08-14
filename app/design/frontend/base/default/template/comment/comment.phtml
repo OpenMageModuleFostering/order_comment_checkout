@@ -1,0 +1,21 @@
+<?php if(Mage::getStoreConfig('chandancomment/comment_group/comment_status',Mage::app()->getStore())) { ?>
+<div class="tunki">
+	<h4><?php echo $this->__('Order Comment') ?></h4>
+	<textarea name="ordercomment" id="ordercomment"></textarea>		
+</div>
+<script type="text/javascript">    
+    jQuery(document).ready(function(){
+		jQuery("#ordercomment").blur(function(){
+			 var p_tunki = jQuery("#ordercomment").val();
+				jQuery.ajax({
+					type : "post",
+					url : "<?php echo $this->getUrl();?>comment/index/textval",
+					data : {ordercomment:p_tunki},
+					success: function(text){
+					//	alert('hi');
+					}
+				});
+		});
+	});
+</script>
+<?php } ?>

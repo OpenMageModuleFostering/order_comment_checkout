@@ -1,9 +1,9 @@
 {
     "name": "OpenMageModuleFostering/Order_Comment_Checkout",
     "type": "magento-module",
-    "license": "Open-Software-License",
+    "license": "OSL",
     "homepage": "",
-    "description": "This extension lets customer to add their comments during placing order. ",
+    "description": "This extension allows customers to add their comments while placing an order.  Requires no manual configuration.",
     "authors": [
     {
         "name": "Chandan Kumar Singh",

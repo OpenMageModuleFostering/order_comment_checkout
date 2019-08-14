@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Chandan_Comment>
+            <version>1.0.0</version>
+        </Chandan_Comment>
+    </modules>
+    <frontend>
+        <routers>
+            <comment>
+                <use>standard</use>
+                <args>
+                    <module>Chandan_Comment</module>
+                    <frontName>comment</frontName>
+                </args>
+            </comment>
+        </routers>
+        <layout>
+            <updates>
+                <comment>
+                    <file>comment.xml</file>
+                </comment>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<comment>
+				<use>admin</use>
+				<args>
+					<module>Chandan_Comment</module>
+					<frontName>comment</frontName>
+				</args>
+			</comment>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<comment module="comment">
+				<title>Comment</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<items module="comment">
+						<title>Manage Comments</title>
+						<sort_order>0</sort_order>
+						<action>comment/adminhtml_comment</action>
+					</items>
+				</children>
+			</comment>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<comment module="comment">
+							<title>Comment</title>
+							<sort_order>71</sort_order>               
+							<children>
+								<items module="comment">
+									<title>Manage Comments</title>
+									<sort_order>0</sort_order>
+									<action>comment/adminhtml_comment</action>
+								</items>
+							</children>
+						</comment>
+						
+						
+						<system>
+							<children>
+								<config>
+									<children>
+										<chandancomment>
+											<title>Comment- All</title>
+										</chandancomment>
+									</children>
+								</config>
+							</children>
+						</system>
+						
+						
+						
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<comment>
+					<file>comment.xml</file>
+				</comment>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <comment>
+                <class>Chandan_Comment_Model</class>
+                <resourceModel>comment_mysql4</resourceModel>
+            </comment>
+            <comment_mysql4>
+                <class>Chandan_Comment_Model_Mysql4</class>
+                <entities>
+                    <comment>
+                        <table>comment</table>
+                    </comment>
+                </entities>
+            </comment_mysql4>
+			
+			<sales>
+                <rewrite>
+                    <order_pdf_invoice>Chandan_Comment_Model_Order_Invoice</order_pdf_invoice>
+                    <order_pdf_items_invoice_default>Chandan_Comment_Model_Order_Default</order_pdf_items_invoice_default>
+                </rewrite>
+            </sales>					
+        </models>
+		
+		
+		<events>
+            <checkout_type_onepage_save_order>
+                <observers>
+                    <chandan_comment_model_observer>
+                        <type>singleton</type>
+                        <class>Chandan_Comment_Model_Observer</class>
+                        <method>commentadd</method>
+                    </chandan_comment_model_observer>
+                </observers>
+            </checkout_type_onepage_save_order>
+        </events>
+		
+        <resources>
+            <comment_setup>
+                <setup>
+                    <module>Chandan_Comment</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </comment_setup>
+            <comment_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </comment_write>
+            <comment_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </comment_read>
+        </resources>
+        <blocks>
+            <comment>
+                <class>Chandan_Comment_Block</class>
+            </comment>
+        </blocks>
+        <helpers>
+            <comment>
+                <class>Chandan_Comment_Helper</class>
+            </comment>
+        </helpers>
+    </global>
+</config>
